@@ -1,0 +1,7 @@
+.main-style {
+text-align: center; /* 设置水平居中 */
+}
+img {
+	margin: auto;
+	display: block;
+}
