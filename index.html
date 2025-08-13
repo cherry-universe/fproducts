@@ -2,19 +2,51 @@
 <html>
 <head><meta charset="utf-8"><title>title</title>
 <style>
-h1,a {
+h1 {
+text-align: center; /* 设置水平居中 */
+}
+a {
 text-align: center; /* 设置水平居中 */
 }
 img {
 	margin: auto;
 	display: block;
 }
+.second-title {
+	text-align: center;
+	width: 30%;
+	color: #301530;
+	background-color: #FFEEFF
+}
+.products-list {
+	background-color: aqua;
+	width: 100%;
+}
+#main-layout {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 </style>
 </head>
  
 <body>
-	<h1>产品</h1>
-	<a href="qxsb/szjyqxj.html">苏州鲸鱼JYCC0719/0919清洗机</a>
+	<h1>产品 Products -- 首页</h1>
+	<div id="main-layout">
+		<div class="second-title">
+			<h3>汽修工具</h3>
+		</div>
+		<ul class="products-list">
+			<li><a href="qxgj/ytfp.html">樱田238风扳手</a></li>
+		</ul>
+		<div class="second-title">
+			<h3>清洗设备</h3>
+		</div>
+		<ul class="products-list">
+			<li><a href="qxsb/szjyqxj.html">苏州鲸鱼JYCC0719/0919清洗机</a></li>
+		</ul>
+	</div>
 </body>
  
 </html>
