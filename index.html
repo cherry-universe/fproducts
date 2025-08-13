@@ -14,17 +14,18 @@ img {
 }
 .second-title {
 	text-align: center;
-	width: 30%;
+	width: 75%;
 	color: #301530;
 	background-color: #FFEEFF;
 	border-radius: 10px;
 	padding: 10px;
+	box-shadow: 10px 5px 30px aqua;
 }
 .products-list {
 	background-color: aqua;
-	width: 80%;
 	border-radius: 10px;
 	padding: 10px;
+	box-shadow: 10px 5px 30px #C0C0C0;
 }
 #main-layout {
 	display: flex;
@@ -32,30 +33,34 @@ img {
 	justify-content: center;
 	align-items: center;
 }
+.main-style {
+	background-image: url('img/background.png');
+}
 </style>
 </head>
  
-<body>
+<body class="main-style">
 	<div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
-		<h1 style="background-color: #C0C0C0; border-radius: 10px; padding: 10px; letter-spacing: 3px">产品 Products -- 首页</h1>
+		<h1 style="background-color: #C0C0C0; border-radius: 10px; padding: 10px; letter-spacing: 3px; box-shadow: 10px 5px 30px aqua;">产品 Products -- 首页</h1>
 	</div>
 	<div id="main-layout">
 		<div class="second-title">
 			<h3>汽修工具</h3>
 			<p>汽修工具涵盖手动工具、电动设备、检测仪器等18类工具类型，包括扳手、千斤顶、诊断仪等设备，在车辆保养、故障诊断、零部件拆装等维修场景中具有基础支撑作用</p>
-		</div>
 		<ul class="products-list">
 			<li><a href="qxgj/ytfp.html">樱田238风扳手</a></li>
 			<li><a href="qxgj/yfmfp.html">一番目238风扳手</a></li>
 			<li><a href="qxgj/qywsqjd-k497.html">启阳K497卧式千斤顶</a></li>
 		</ul>
+		</div>
+		<hr />
 		<div class="second-title">
 			<h3>清洗设备</h3>
 			<p>汽车清洗设备包括全自动洗车机、高压蒸汽洗车机和隧道式洗车机等，通过高压水流、蒸汽或自动化流程快速清洁车辆。全自动机型可完成冲洗、打蜡和风干，蒸汽型适合深度清洁且节水节能，隧道式适合连续作业。此外还有便携手动工具，满足不同场所的洗车需求</p>
-		</div>
 		<ul class="products-list">
 			<li><a href="qxsb/szjyqxj.html">苏州鲸鱼JYCC0719/0919清洗机</a></li>
 		</ul>
+		</div>
 	</div>
 </body>
  
