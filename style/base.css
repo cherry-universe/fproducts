@@ -1,7 +1,42 @@
-.main-style {
-text-align: center; /* 设置水平居中 */
-}
 img {
 	margin: auto;
 	display: block;
+}
+.second-node {
+	text-align: center;
+	width: 75%;
+	color: #301530;
+	background-color: #FFEEFF;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 10px 5px 30px aqua;
+}
+.third-node {
+	background-color: aqua;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 10px 5px 30px #C0C0C0;
+}
+.title-style {
+	background-color: #C0C0C0;
+	border-radius: 10px;
+	padding: 10px;
+	letter-spacing: 3px;
+	box-shadow: 10px 5px 30px aqua;
+}
+.title-layout {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+body {
+	background-image: url('../img/background.png');
+	font-size: 200%;
+}
+.main-layout {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
