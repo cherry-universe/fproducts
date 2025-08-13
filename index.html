@@ -26,6 +26,49 @@
 				<li><a href="qxsb/szjyqxj.html">苏州鲸鱼JYCC0719/0919清洗机</a></li>
 			</ul>
 		</div>
+		<div>
+			<button id="decrease">缩小字体</button>
+			<button id="reset">重置</button>
+			<button id="increase">放大字体</button>
+			<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+            const decreaseBtn = document.getElementById('decrease');
+            const resetBtn = document.getElementById('reset');
+            const increaseBtn = document.getElementById('increase');
+            const currentSizeDisplay = document.getElementById('current-size');
+
+            // 初始字体大小
+            let currentSize = 100;
+
+            // 更新字体大小
+            function updateFontSize(newSize) {
+                currentSize = newSize;
+                body.style.fontSize = currentSize + '%';
+                currentSizeDisplay.textContent = currentSize;
+            }
+
+            // 减小字体
+            decreaseBtn.addEventListener('click', function() {
+                if (currentSize > 50) { // 设置最小限制
+                    updateFontSize(currentSize - 10);
+                }
+            });
+
+            // 重置字体
+            resetBtn.addEventListener('click', function() {
+                updateFontSize(100);
+            });
+
+            // 增大字体
+            increaseBtn.addEventListener('click', function() {
+                if (currentSize < 300) { // 设置最大限制
+                    updateFontSize(currentSize + 10);
+                }
+            });
+        });
+    </script>
+		</div>
 	</div>
 </body>
  

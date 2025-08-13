@@ -24,7 +24,7 @@ img {
 	letter-spacing: 3px;
 	box-shadow: 10px 5px 30px aqua;
 }
-.title-layout {
+.title-layout, .row-layout {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -32,11 +32,17 @@ img {
 }
 body {
 	background-image: url('../img/background.png');
-	font-size: 200%;
 }
 .main-layout {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	background-color: yellow;
+	border-radius: 5px;
 }
