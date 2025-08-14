@@ -16,10 +16,18 @@ img {
 	align-items: center;
 	gap: 3px;
 }
+.second-node-base {
+	text-align: center;
+	color: #301530;
+	background-color: #FFEEFF;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 10px 5px 30px aqua;
+}
 .third-node {
 	background-color: aqua;
 	border-radius: 10px;
-	padding: 10px;
+	padding: 5px;
 	box-shadow: 10px 5px 30px #C0C0C0;
 	width: 90%;
 }
@@ -38,6 +46,8 @@ img {
 }
 body {
 	background-image: url('../img/background.png');
+	background-size: auto;
+	font-family: serif;
 }
 .main-layout {
 	display: flex;
@@ -45,6 +55,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 5px;
+}
+.column-layout {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 a:link {
 	text-decoration: none;
