@@ -1,6 +1,6 @@
 img {
-	margin: auto;
-	display: block;
+	width: 100%;
+	height: auto;
 }
 .second-node {
 	text-align: center;
@@ -10,12 +10,18 @@ img {
 	border-radius: 10px;
 	padding: 10px;
 	box-shadow: 10px 5px 30px aqua;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3px;
 }
 .third-node {
 	background-color: aqua;
 	border-radius: 10px;
 	padding: 10px;
 	box-shadow: 10px 5px 30px #C0C0C0;
+	width: 90%;
 }
 .title-style {
 	background-color: #C0C0C0;
@@ -38,6 +44,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 5px;
 }
 a:link {
 	text-decoration: none;
@@ -45,4 +52,19 @@ a:link {
 a:hover {
 	background-color: yellow;
 	border-radius: 5px;
+	padding: 5px;
+}
+footer {
+	background-color: #333333;
+	color: #FFFFFF;
+	text-align: center;
+	width: fit-content;
+	border-radius: 10px;
+	padding: 5px;
+}
+table {
+	border: 2px solid black;
+}
+th, td {
+	border: 1px solid black;
 }
