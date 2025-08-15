@@ -105,6 +105,7 @@ button::after {
 }
 button:hover {
   cursor: pointer;
+  transform: scale(1.2);
 }
 button:hover::after {
   transition: transform 0.5s ease-in-out;
