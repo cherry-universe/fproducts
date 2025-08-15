@@ -6,7 +6,7 @@ img {
 	text-align: center;
 	width: 75%;
 	color: #301530;
-	background-color: #FFEEFF;
+	background:linear-gradient(220.55deg, #FFEAF6 0%, #FF9DE4 100%);
 	border-radius: 10px;
 	padding: 10px;
 	box-shadow: 10px 5px 30px aqua;
@@ -19,13 +19,13 @@ img {
 .second-node-base {
 	text-align: center;
 	color: #301530;
-	background-color: #FFEEFF;
+	background:linear-gradient(220.55deg, #FFEAF6 0%, #FF9DE4 100%);
 	border-radius: 10px;
 	padding: 10px;
 	box-shadow: 10px 5px 30px aqua;
 }
 .third-node {
-	background-color: aqua;
+	background: linear-gradient(220.55deg, #8FFF85 0%, #39A0FF 100%);
 	border-radius: 10px;
 	padding: 5px;
 	box-shadow: 10px 5px 30px #C0C0C0;
@@ -46,7 +46,7 @@ img {
 }
 body {
 	/*background-image: url('../img/background.png');*/
-	background-image: linear-gradient(#FFAAAA, #AAFFAA, #AAAAFF);
+	background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%);
 	font-family: serif;
 }
 .main-layout {
