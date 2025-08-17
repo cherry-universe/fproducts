@@ -4,7 +4,7 @@ def gen_context(filename):
     template = """<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"><title>{title}</title>
-<link href={cssfile} rel="stylesheet" type="text/css">
+<link href="{cssfile}" rel="stylesheet" type="text/css">
 </head>
  
 <body>
@@ -19,8 +19,37 @@ def gen_context(filename):
 		{}
 		</div>
 	</div>"""
-    file_context = open(filename, "r")
-    title = filename
-    return template.format(title = title, cssfile = "../style/base.css", context = template_body.format(title, file_context.read()))
+    file = open(filename, "r")
+    lines = file.readlines()
+    file.close()
+    file_context = ""
+    title = ""
+    cssfile = "../style/base.css"
+    for line in lines:
+        lst = line.split(' ')
+        if lst[0] == "p":
+            file_context += "<p>{}</p>".format(lst[1].strip())
+        elif lst[0] == "img":
+            file_context += "<img class=\"third-node\" src=\"{}\" alt=\"图片加载失败\">".format(lst[1].strip())
+        elif lst[0] == "title":
+            title = lst[1].strip()
+        elif lst[0] == "css":
+            cssfile = lst[1].strip()
+    return template.format(title = title, cssfile = cssfile, context = template_body.format(title, file_context))
 
-print(gen_context(sys.argv[1]))
+def gen_link(filename):
+    file = open(filename, "r")
+    lines = file.readlines()
+    file.close()
+    for line in lines:
+        lst = line.split(' ')
+        if lst[0] == "title":
+            title = lst[1].strip()
+    return "<a href=\"{}.html\"><button>{}</button></a>".format(filename, title)
+
+for i in range(1, len(sys.argv)):
+    file = open(sys.argv[i] + ".html", "w")
+    all_context = gen_context(sys.argv[i])
+    file.write(all_context)
+    file.close()
+    print(gen_link(sys.argv[i]))
